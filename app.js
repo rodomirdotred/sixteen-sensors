@@ -51,4 +51,4 @@ app.get('/sensors', async (req, res) => {
   });
 });
 // eslint-disable-next-line no-console
-app.listen(8080, () => console.log('`app runnig on port 8080 `'));
+app.listen(80, () => console.log('`app runnig on port 80 `'));
