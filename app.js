@@ -5,6 +5,14 @@ const app = express();
 
 app.use(express.json());
 
+app.get('/', async (req, res) => {
+  res.status(200).json({
+    statusCode: 200,
+    statusText: 'everything going well!',
+    data: null,
+    message: 'welcome , you find us.',
+  });
+});
 app.get('/sensors', async (req, res) => {
   const secret = process.env.SECRET;
   if (!req.headers.auth || req.headers.auth !== secret) {
