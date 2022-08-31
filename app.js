@@ -50,5 +50,6 @@ app.get('/sensors', async (req, res) => {
     message: 'Have a good day dear Mr. M.J.O.N.',
   });
 });
+const port = process.env.PORT || 80;
 // eslint-disable-next-line no-console
-app.listen(80, () => console.log('`app runnig on port 80 `'));
+app.listen(port, () => console.log('`app runnig on port 80 `'));
